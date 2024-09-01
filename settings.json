@@ -1,0 +1,32 @@
+{
+  "terminal": {
+    "dock": "bottom"
+  },
+  "theme": "Rosé Pine Moon",
+  "telemetry": {
+    "metrics": false
+  },
+  "vim_mode": true,
+  "ui_font_size": 16,
+  "buffer_font_size": 14,
+  "cursor_blink": false,
+  "buffer_font_family": "Liga SFMono Nerd Font",
+  "experimental.theme_overrides": {
+    "editor.background": "#202020",
+    "toolbar.background": "#202020",
+    "status_bar.background": "#202020",
+    "panel.background": "#202020",
+    "tab_bar.background": "#202020",
+    "title_bar.background": "#202020",
+    "background": "#202020",
+    "tab.inactive_background": "#202020",
+    "editor.active_line.background": "#333333",
+    "editor.gutter.background": "#202020",
+    "terminal.background": "#202020",
+    "terminal.ansi.blue": "#3571C7"
+  },
+  "relative_line_numbers": true,
+  "vim": {
+    "use_system_clipboard": "on_yank"
+  }
+}

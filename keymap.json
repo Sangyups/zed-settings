@@ -1,0 +1,49 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "space e f": "workspace::ToggleLeftDock"
+    }
+  },
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      // put key-bindings here if you want them to work in normal & visual mode
+      "ctrl-a": "editor::SelectAll",
+      "∆": "editor::MoveLineDown",
+      "˚": "editor::MoveLineUp",
+      "[ d": "editor::GoToPrevDiagnostic",
+      "] d": "editor::GoToDiagnostic",
+      "[ h": "editor::GoToPrevHunk",
+      "] h": "editor::GoToHunk",
+      "space g h p": "editor::ToggleHunkDiff",
+      "space g h r": "editor::RevertSelectedHunks",
+      "space e f": "workspace::ToggleLeftDock",
+      "space f f": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "vim_mode == normal && !menu",
+    "bindings": {
+      "shift-h": "pane::ActivatePrevItem",
+      "shift-l": "pane::ActivateNextItem",
+      "g c c": "editor::ToggleComments",
+      "g r": "editor::FindAllReferences",
+      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
+      "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"]
+    }
+  },
+  {
+    "context": "vim_mode == visual && !menu",
+    "bindings": {
+      "g c": "editor::ToggleComments"
+    }
+  }
+]
