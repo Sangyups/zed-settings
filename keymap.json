@@ -13,31 +13,60 @@
     }
   },
   {
+    "context": "Editor || Terminal",
+    "bindings": {
+      "alt-f12": "workspace::ToggleBottomDock"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "escape": "workspace::ToggleBottomDock"
+    }
+  },
+  {
     "context": "(vim_mode == normal || vim_mode == visual) && vim_mode != waiting",
     "bindings": {
       // put key-bindings here if you want them to work in normal & visual mode
       "ctrl-a": "editor::SelectAll",
       "∆": "editor::MoveLineDown",
       "˚": "editor::MoveLineUp",
-      "[ d": "editor::GoToPrevDiagnostic",
+      "[ d": "editor::GoToPreviousDiagnostic",
       "] d": "editor::GoToDiagnostic",
-      "[ h": "editor::GoToPrevHunk",
+      "space d": "editor::Hover",
+      "[ h": "editor::GoToPreviousHunk",
       "] h": "editor::GoToHunk",
-      "space g h p": "editor::ToggleHunkDiff",
-      "space g h r": "editor::RevertSelectedHunks",
+      "space g h p": "editor::ToggleSelectedDiffHunks",
+      "space g h r": "git::Restore",
       "space e f": "workspace::ToggleLeftDock",
-      "space f f": "file_finder::Toggle"
+      "space f f": "file_finder::Toggle",
+      "space r n": "editor::Rename",
+      "space c a": "editor::ToggleCodeActions"
     }
   },
   {
     "context": "vim_mode == normal && !menu",
     "bindings": {
-      "shift-h": "pane::ActivatePrevItem",
-      "shift-l": "pane::ActivateNextItem",
+      "˙": "pane::ActivatePreviousItem",
+      "¬": "pane::ActivateNextItem",
       "g c c": "editor::ToggleComments",
       "g r": "editor::FindAllReferences",
-      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
-      "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"]
+      "g d": "editor::GoToDefinition",
+      "g D": "editor::GoToDeclaration",
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-l": "workspace::ActivatePaneRight"
+    }
+  },
+  {
+    "context": "vim_mode == insert",
+    "bindings": {
+      "ctrl-q": "editor::ShowSignatureHelp"
+    }
+  },
+  {
+    "context": "Editor && edit_prediction && !showing_completions",
+    "bindings": {
+      "alt-enter": "editor::AcceptEditPrediction"
     }
   },
   {
