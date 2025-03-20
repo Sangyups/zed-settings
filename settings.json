@@ -14,11 +14,14 @@
   "telemetry": {
     "metrics": false
   },
-  "ui_font_size": 15,
-  "buffer_font_size": 12,
-  "cursor_blink": false,
   "buffer_font_family": "SF Mono",
   "buffer_font_fallbacks": ["D2Coding"],
+  "ui_font_size": 15,
+  "buffer_font_size": 12,
+  "buffer_line_height": {
+    "custom": 1.6
+  },
+  "cursor_blink": false,
   "format_on_save": "on",
   "relative_line_numbers": true,
   "vim_mode": true,
