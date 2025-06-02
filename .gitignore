@@ -61,3 +61,4 @@ keymap_backup.json
 embeddings/
 prompts/
 .tmp*
+conversations/

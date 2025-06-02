@@ -1,8 +1,8 @@
 {
-  "agent": {
+  "assistant": {
     "default_model": {
       "provider": "copilot_chat",
-      "model": "claude-3.7-sonnet-thought"
+      "model": "o3-mini"
     },
     "version": "2"
   },
@@ -14,13 +14,10 @@
   "telemetry": {
     "metrics": false
   },
-  "buffer_font_family": "Liga SFMono Nerd Font",
+  "buffer_font_family": "SF Mono",
   "buffer_font_fallbacks": ["D2Coding"],
   "ui_font_size": 15,
   "buffer_font_size": 12,
-  "buffer_font_features": {
-    "calt": false
-  },
   "buffer_line_height": {
     "custom": 1.6
   },
@@ -38,8 +35,5 @@
   },
   "inlay_hints": {
     "enabled": true
-  },
-  "features": {
-    "edit_prediction_provider": "copilot"
   }
 }
