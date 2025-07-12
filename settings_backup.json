@@ -1,23 +1,28 @@
 {
-  "assistant": {
+  "agent": {
+    "play_sound_when_agent_done": true,
+    "default_profile": "write",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "o3-mini"
+      "model": "claude-sonnet-4"
     },
     "version": "2"
   },
   "terminal": {
-    "dock": "bottom",
+    "dock": "left",
     "font_family": "Liga SFMono Nerd Font"
   },
   "theme": "Github Dark",
   "telemetry": {
     "metrics": false
   },
-  "buffer_font_family": "SF Mono",
+  "buffer_font_family": "Liga SFMono Nerd Font",
   "buffer_font_fallbacks": ["D2Coding"],
   "ui_font_size": 15,
   "buffer_font_size": 12,
+  "buffer_font_features": {
+    "calt": false
+  },
   "buffer_line_height": {
     "custom": 1.6
   },
@@ -35,5 +40,8 @@
   },
   "inlay_hints": {
     "enabled": true
+  },
+  "features": {
+    "edit_prediction_provider": "copilot"
   }
 }

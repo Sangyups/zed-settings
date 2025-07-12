@@ -13,22 +13,30 @@
       "escape": "workspace::ToggleLeftDock"
     }
   },
+
   {
-    "context": "Editor || Terminal",
+    "context": "AssistantPanel",
     "bindings": {
-      "alt-f12": "workspace::ToggleBottomDock"
+      "escape": "workspace::ToggleRightDock"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-f12": "terminal_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Dock || Terminal",
+    "bindings": {
+      "escape": "workspace::CloseAllDocks"
     }
   },
   {
     "context": "Terminal",
     "bindings": {
-      "escape": "workspace::ToggleBottomDock"
-    }
-  },
-  {
-    "context": "Workspace",
-    "bindings": {
-      "cmd-1": "workspace::ToggleLeftDock"
+      "cmd-1": "workspace::ToggleLeftDock",
+      "alt-f12": "workspace::ToggleLeftDock"
     }
   },
   {
@@ -64,7 +72,7 @@
       "g D": "editor::GoToDeclaration",
       "ctrl-h": "workspace::ActivatePaneLeft",
       "ctrl-l": "workspace::ActivatePaneRight",
-      "space e f": "workspace::ToggleLeftDock",
+      "space e f": "project_panel::ToggleFocus",
       "space f f": "file_finder::Toggle",
       "[ d": "editor::GoToPreviousDiagnostic",
       "] d": "editor::GoToDiagnostic",
