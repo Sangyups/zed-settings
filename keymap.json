@@ -100,7 +100,8 @@
   {
     "context": "Editor && edit_prediction",
     "bindings": {
-      "ctrl-y": "editor::AcceptEditPrediction"
+      "ctrl-y": "editor::AcceptEditPrediction",
+      "tab": "editor::Tab"
     }
   },
   {
