@@ -51,7 +51,8 @@
       "space r n": "editor::Rename",
       "space c a": "editor::ToggleCodeActions",
       "space f m": "editor::Format",
-      "space a e": "assistant::InlineAssist"
+      "space a e": "assistant::InlineAssist",
+      "ctrl-q": "editor::ShowSignatureHelp"
     }
   },
   {
