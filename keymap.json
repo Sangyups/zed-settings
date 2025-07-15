@@ -23,7 +23,8 @@
   {
     "context": "Editor",
     "bindings": {
-      "alt-f12": "terminal_panel::ToggleFocus"
+      "alt-f12": "terminal_panel::ToggleFocus",
+      "ctrl-q": "editor::ShowSignatureHelp"
     }
   },
   {
@@ -42,7 +43,6 @@
   {
     "context": "(vim_mode == normal || vim_mode == visual) && vim_mode != waiting",
     "bindings": {
-      // put key-bindings here if you want them to work in normal & visual mode
       "∆": "editor::MoveLineDown",
       "˚": "editor::MoveLineUp",
       "space d": "editor::Hover",
@@ -51,8 +51,7 @@
       "space r n": "editor::Rename",
       "space c a": "editor::ToggleCodeActions",
       "space f m": "editor::Format",
-      "space a e": "assistant::InlineAssist",
-      "ctrl-q": "editor::ShowSignatureHelp"
+      "space a e": "assistant::InlineAssist"
     }
   },
   {
