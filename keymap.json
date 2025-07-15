@@ -80,7 +80,18 @@
       "] h": "editor::GoToHunk",
       "ctrl-a": "editor::SelectAll",
       "ctrl-u": ["workspace::SendKeystrokes", "ctrl-u z z"],
-      "ctrl-d": ["workspace::SendKeystrokes", "ctrl-d z z"]
+      "ctrl-d": ["workspace::SendKeystrokes", "ctrl-d z z"],
+      "] f": "vim::NextMethodStart",
+      "] shift-f": "vim::NextMethodEnd",
+      "[ f": "vim::PreviousMethodStart",
+      "[ shift-f": "vim::PreviousMethodEnd"
+    }
+  },
+  {
+    "context": "Workspace && !Terminal",
+    "bindings": {
+      "ctrl-shift-r": "task::Spawn",
+      "ctrl-shift-d": "debugger::Start"
     }
   },
   {
