@@ -42,5 +42,18 @@
   },
   "features": {
     "edit_prediction_provider": "copilot"
+  },
+  "languages": {
+    "Python": {
+      "language_servers": ["ruff"],
+      "format_on_save": "on",
+      "formatter": [
+        {
+          "language_server": {
+            "name": "ruff"
+          }
+        }
+      ]
+    }
   }
 }
