@@ -96,12 +96,6 @@
     }
   },
   {
-    "context": "vim_mode == insert",
-    "bindings": {
-      "ctrl-q": "editor::ShowSignatureHelp"
-    }
-  },
-  {
     "context": "vim_mode == visual && !menu",
     "bindings": {
       "g c": "editor::ToggleComments",
