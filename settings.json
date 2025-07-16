@@ -32,6 +32,12 @@
   "vim": {
     "use_system_clipboard": "on_yank"
   },
+  "vertical_scroll_margin": 10,
+  "command_aliases": {
+    "W": "w",
+    "Wq": "wq",
+    "Q": "q"
+  },
   "diagnostics": {
     "inline": {
       "enabled": true
