@@ -89,6 +89,7 @@
       "ctrl-l": "workspace::ActivatePaneRight",
       "space e f": "project_panel::ToggleFocus",
       "space f f": "file_finder::Toggle",
+      "space f w": "pane::DeploySearch",
       "[ d": "editor::GoToPreviousDiagnostic",
       "] d": "editor::GoToDiagnostic",
       "[ h": "editor::GoToPreviousHunk",
