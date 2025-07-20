@@ -85,6 +85,7 @@
       "g r": "editor::FindAllReferences",
       "g d": "editor::GoToDefinition",
       "g D": "editor::GoToDeclaration",
+      "g i": "editor::GoToImplementation",
       "ctrl-h": "workspace::ActivatePaneLeft",
       "ctrl-l": "workspace::ActivatePaneRight",
       "space e f": "project_panel::ToggleFocus",
