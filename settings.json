@@ -36,9 +36,7 @@
   "buffer_font_features": {
     "calt": false
   },
-  "buffer_line_height": {
-    "custom": 1.6
-  },
+  "buffer_line_height": "comfortable",
   "cursor_blink": false,
   "format_on_save": "on",
   "relative_line_numbers": true,
