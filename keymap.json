@@ -51,9 +51,6 @@
     "bindings": {
       "∆": "editor::MoveLineDown",
       "˚": "editor::MoveLineUp",
-      "space d": "editor::Hover",
-      "space g h p": "editor::ToggleSelectedDiffHunks",
-      "space g h r": "git::Restore",
       "space r n": "editor::Rename",
       "space c a": "editor::ToggleCodeActions",
       "space f m": "editor::Format",
@@ -80,6 +77,12 @@
     "bindings": {
       "˙": "pane::ActivatePreviousItem",
       "¬": "pane::ActivateNextItem",
+      "space d": "editor::Hover",
+      "space g h p": "editor::ToggleSelectedDiffHunks",
+      "space g h r": "git::Restore",
+      "space g h a": "git::StageAndNext",
+      "space g h u": "git::UnstageAndNext",
+      "space g h s": "git::ToggleStaged",
       "g c c": "editor::ToggleComments",
       "g r": "editor::FindAllReferences",
       "g d": "editor::GoToDefinition",
