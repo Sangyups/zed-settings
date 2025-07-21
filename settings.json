@@ -55,6 +55,12 @@
       "enabled": true
     }
   },
+  "git": {
+    "inline_blame": {
+      "enabled": true,
+      "delay_ms": 1000
+    }
+  },
   "inlay_hints": {
     "enabled": true,
     "show_parameter_hints": false,
