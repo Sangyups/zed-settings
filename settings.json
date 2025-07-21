@@ -24,7 +24,14 @@
     "dock": "right",
     "font_family": "Liga SFMono Nerd Font"
   },
-  "theme": "Rosé Pine",
+  "theme": "Github Dark Dimmed",
+  "experimental.theme_overrides": {
+    "syntax": {
+      "string": {
+        "font_weight": 700
+      }
+    }
+  },
   "telemetry": {
     "metrics": false
   },
