@@ -8,10 +8,10 @@
     }
   },
   "terminal": {
-    "dock": "left",
+    "dock": "right",
     "font_family": "Liga SFMono Nerd Font"
   },
-  "theme": "Rosé Pine",
+  "theme": "Github Dark Dimmed",
   "telemetry": {
     "metrics": false
   },
