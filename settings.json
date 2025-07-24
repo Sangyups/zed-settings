@@ -1,4 +1,5 @@
 {
+  "show_edit_predictions": false,
   "agent": {
     "play_sound_when_agent_done": true,
     "default_profile": "write",
@@ -24,7 +25,7 @@
     "dock": "right",
     "font_family": "Liga SFMono Nerd Font"
   },
-  "theme": "Github Dark Dimmed",
+  "theme": "JetBrains Dark",
   "experimental.theme_overrides": {
     "syntax": {
       "string": {
@@ -75,6 +76,40 @@
   },
   "features": {
     "edit_prediction_provider": "copilot"
+  },
+  "lsp": {
+    "yaml-language-server": {
+      "settings": {
+        "yaml": {
+          "schemas": {
+            "kubernetes": [
+              "*deploy*.yaml",
+              "*service*.yaml",
+              "*secret*.yaml",
+              "*ingress*.yaml",
+              "*configmap*.yaml",
+              "*manifest*.yaml",
+              "*deploy*.yml",
+              "*service*.yml",
+              "*secret*.yml",
+              "*ingress*.yml",
+              "*configmap*.yml",
+              "*manifest*.yml"
+            ],
+            "http://json.schemastore.org/github-workflow": ".github/workflows/*",
+            "http://json.schemastore.org/github-action": ".github/action.{yml,yaml}",
+            "http://json.schemastore.org/ansible-stable-2.9": "roles/tasks/*.{yml,yaml}",
+            "http://json.schemastore.org/kustomization": "kustomization.{yml,yaml}",
+            "https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/ansible.json#/$defs/playbook": "*play*.{yml,yaml}",
+            "http://json.schemastore.org/chart": "Chart.{yml,yaml}",
+            "https://json.schemastore.org/dependabot-v2": ".github/dependabot.{yml,yaml}",
+            "https://json.schemastore.org/openapi.json": "*api*.{yml,yaml}",
+            "https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json": "*docker-compose*.{yml,yaml}",
+            "https://raw.githubusercontent.com/argoproj/argo-workflows/master/api/jsonschema/schema.json": "*flow*.{yml,yaml}"
+          }
+        }
+      }
+    }
   },
   "languages": {
     "Python": {
