@@ -1,0 +1,7 @@
+{
+  "Error Handling": {
+    "prefix": "iferr",
+    "body": ["if err != nil {", "\treturn err$0", "\t}"],
+    "description": "Handles error with if statement"
+  }
+}
