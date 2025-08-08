@@ -1,24 +1,27 @@
 {
+  "debugger": {
+    "dock": "left"
+  },
   "show_edit_predictions": false,
   "agent": {
     "play_sound_when_agent_done": true,
     "default_profile": "write",
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "claude-sonnet-4"
+      "provider": "openai",
+      "model": "gpt-5"
     },
     "commit_message_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-4.1"
+      "provider": "openai",
+      "model": "gpt-5-nano"
     },
     "inline_assistant_model": {
-      "provider": "copilot_chat",
-      "model": "claude-sonnet-4"
+      "provider": "openai",
+      "model": "gpt-5-mini"
     },
     "inline_alternatives": [],
     "thread_summary_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-4.1"
+      "provider": "openai",
+      "model": "gpt-5-nano"
     }
   },
   "terminal": {
@@ -30,16 +33,21 @@
     "syntax": {
       "string": {
         "font_weight": 700
+      },
+      "function": {
+        "color": "#ffffff"
       }
-    }
+    },
+    "deleted": "#c23636"
   },
   "telemetry": {
     "metrics": false
   },
   "buffer_font_family": "SF Mono",
   "buffer_font_fallbacks": ["D2Coding"],
+  "agent_font_size": 15,
   "ui_font_size": 14,
-  "ui_font_family": "SF Mono",
+  "ui_font_family": "Noto Sans",
   "buffer_font_size": 12,
   "buffer_font_features": {
     "calt": false
