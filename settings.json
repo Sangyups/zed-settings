@@ -58,7 +58,9 @@
   "relative_line_numbers": true,
   "vim_mode": true,
   "vim": {
-    "use_system_clipboard": "on_yank"
+    "use_system_clipboard": "on_yank",
+    "use_smartcase_find": true,
+    "highlight_on_yank_duration": 150
   },
   "vertical_scroll_margin": 10,
   "command_aliases": {

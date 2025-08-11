@@ -111,6 +111,24 @@
     }
   },
   {
+    "context": "vim_operator == d",
+    "bindings": {
+      "s": "vim::PushDeleteSurrounds"
+    }
+  },
+  {
+    "context": "vim_operator == c",
+    "bindings": {
+      "s": ["vim::PushChangeSurrounds", {}]
+    }
+  },
+  {
+    "context": "vim_operator == y",
+    "bindings": {
+      "s": ["vim::PushAddSurrounds", {}]
+    }
+  },
+  {
     "context": "Workspace && !Terminal",
     "bindings": {
       "ctrl-shift-r": "task::Spawn",
