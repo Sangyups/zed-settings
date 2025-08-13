@@ -7,6 +7,13 @@
 // from the command palette.
 [
   {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-1": "project_panel::ToggleFocus",
+      "alt-f12": "terminal_panel::ToggleFocus"
+    }
+  },
+  {
     "context": "EmptyPane || SharedScreen",
     "bindings": {
       "space f f": "file_finder::Toggle",
@@ -38,13 +45,6 @@
   {
     "context": "Editor",
     "bindings": {
-      "alt-f12": "terminal_panel::ToggleFocus"
-    }
-  },
-  {
-    "context": "Editor || Dock",
-    "bindings": {
-      "cmd-1": "project_panel::ToggleFocus",
       "alt-f12": "terminal_panel::ToggleFocus"
     }
   },
@@ -87,6 +87,7 @@
       "space g h a": "git::StageAndNext",
       "space g h u": "git::UnstageAndNext",
       "space g h s": "git::ToggleStaged",
+      "space g b": "editor::OpenGitBlameCommit",
       "g c c": "editor::ToggleComments",
       "g r": "editor::FindAllReferences",
       "g d": "editor::GoToDefinition",
@@ -107,7 +108,8 @@
       "] f": "vim::NextMethodStart",
       "] shift-f": "vim::NextMethodEnd",
       "[ f": "vim::PreviousMethodStart",
-      "[ shift-f": "vim::PreviousMethodEnd"
+      "[ shift-f": "vim::PreviousMethodEnd",
+      "space b": "editor::ToggleBreakpoint"
     }
   },
   {

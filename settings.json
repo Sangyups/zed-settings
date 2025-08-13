@@ -75,8 +75,7 @@
   },
   "git": {
     "inline_blame": {
-      "enabled": true,
-      "delay_ms": 1000
+      "enabled": false
     }
   },
   "inlay_hints": {
