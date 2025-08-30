@@ -3,6 +3,11 @@
     "dock": "left"
   },
   "show_edit_predictions": false,
+  "agent_servers": {
+    "gemini": {
+      "ignore_system_version": false
+    }
+  },
   "agent": {
     "play_sound_when_agent_done": true,
     "default_profile": "write",

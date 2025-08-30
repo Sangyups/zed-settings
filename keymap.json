@@ -141,9 +141,9 @@
     "context": "vim_mode == visual && !menu",
     "bindings": {
       "g c": "editor::ToggleComments",
+      "shift-s": "vim::PushAddSurrounds",
       ">": "editor::Indent",
-      "<": "editor::Outdent",
-      "shift-s": "vim::PushAddSurrounds"
+      "<": "editor::Outdent"
     }
   },
   {
