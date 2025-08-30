@@ -87,6 +87,17 @@
     "edit_prediction_provider": "copilot"
   },
   "lsp": {
+    "gopls": {
+      "initialization_options": {
+        "usePlaceholders": false
+      }
+    },
+    "clangd": {
+      "binary": {
+        "path": "/usr/bin/clangd",
+        "arguments": ["--function-arg-placeholders=0"]
+      }
+    },
     "yaml-language-server": {
       "settings": {
         "yaml": {
