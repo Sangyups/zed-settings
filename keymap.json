@@ -23,11 +23,12 @@
     }
   },
   {
-    "context": "ProjectPanel",
+    "context": "ProjectPanel && !editing",
     "bindings": {
       "space e f": "workspace::ToggleLeftDock",
       "escape": "workspace::ToggleLeftDock",
-      "cmd-1": "workspace::ToggleLeftDock"
+      "cmd-1": "workspace::ToggleLeftDock",
+      "enter": ["workspace::SendKeystrokes", "enter space e f"]
     }
   },
   {
