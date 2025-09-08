@@ -26,9 +26,9 @@
     "context": "ProjectPanel && !editing",
     "bindings": {
       "space e f": "workspace::ToggleLeftDock",
+      "space e e": "workspace::ToggleLeftDock",
       "escape": "workspace::ToggleLeftDock",
-      "cmd-1": "workspace::ToggleLeftDock",
-      "enter": ["workspace::SendKeystrokes", "enter space e f"]
+      "cmd-1": "workspace::ToggleLeftDock"
     }
   },
   {
@@ -97,6 +97,7 @@
       "ctrl-h": "workspace::ActivatePaneLeft",
       "ctrl-l": "workspace::ActivatePaneRight",
       "space e f": "pane::RevealInProjectPanel",
+      "space e e": "project_panel::ToggleFocus",
       "space f f": "file_finder::Toggle",
       "space f w": "pane::DeploySearch",
       "[ d": "editor::GoToPreviousDiagnostic",
@@ -110,7 +111,8 @@
       "] shift-f": "vim::NextMethodEnd",
       "[ f": "vim::PreviousMethodStart",
       "[ shift-f": "vim::PreviousMethodEnd",
-      "space b": "editor::ToggleBreakpoint"
+      "space b p": "editor::ToggleBreakpoint",
+      "space b d a": ["pane::CloseOtherItems", { "close_pinned": false }]
     }
   },
   {
