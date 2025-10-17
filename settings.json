@@ -12,16 +12,16 @@
     "play_sound_when_agent_done": true,
     "default_profile": "write",
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "claude-sonnet-4"
+      "provider": "openai",
+      "model": "gpt-5"
     },
     "commit_message_model": {
       "provider": "copilot_chat",
       "model": "gpt-4.1"
     },
     "inline_assistant_model": {
-      "provider": "copilot_chat",
-      "model": "claude-sonnet-4"
+      "provider": "openai",
+      "model": "gpt-5"
     },
     "inline_alternatives": [],
     "thread_summary_model": {
