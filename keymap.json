@@ -18,6 +18,8 @@
     "bindings": {
       "space f f": "file_finder::Toggle",
       "space e f": "project_panel::ToggleFocus",
+      "space f w": "pane::DeploySearch",
+      "space e e": "project_panel::ToggleFocus",
       "cmd-1": "project_panel::ToggleFocus",
       "alt-f12": "terminal_panel::ToggleFocus"
     }
