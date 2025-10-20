@@ -50,7 +50,7 @@
   },
   "buffer_font_family": "SF Mono",
   "buffer_font_fallbacks": ["D2Coding"],
-  "agent_ui_font_size": 14,
+  "agent_ui_font_size": 15,
   "agent_buffer_font_size": 12,
   "ui_font_size": 14,
   "ui_font_family": "Noto Sans",
@@ -139,15 +139,9 @@
   },
   "languages": {
     "Python": {
-      "language_servers": ["pyright", "ruff"],
+      "language_servers": ["pyright", "ruff", "isort"],
       "format_on_save": "on",
-      "formatter": [
-        {
-          "language_server": {
-            "name": "ruff"
-          }
-        }
-      ]
+      "code_actions_on_format": { "source.organizeImports.ruff": true }
     }
   }
 }
