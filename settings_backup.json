@@ -1,47 +1,146 @@
 {
+  "debugger": {
+    "dock": "left"
+  },
+  "show_edit_predictions": false,
+  "agent_servers": {
+    "gemini": {
+      "ignore_system_version": false
+    }
+  },
   "agent": {
     "play_sound_when_agent_done": true,
     "default_profile": "write",
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "claude-sonnet-4"
+      "provider": "openai",
+      "model": "gpt-5"
     },
-    "version": "2"
+    "commit_message_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4.1"
+    },
+    "inline_assistant_model": {
+      "provider": "openai",
+      "model": "gpt-5"
+    },
+    "inline_alternatives": [],
+    "thread_summary_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4.1"
+    }
   },
   "terminal": {
-    "dock": "left",
+    "dock": "right",
     "font_family": "Liga SFMono Nerd Font"
   },
-  "theme": "Github Dark",
+  "theme": "Github Dark Dimmed",
+  "experimental.theme_overrides": {
+    "syntax": {
+      "string": {
+        "font_weight": 700
+      },
+      "function": {
+        "color": "#ffffff"
+      }
+    },
+    "deleted": "#c23636"
+  },
   "telemetry": {
     "metrics": false
   },
-  "buffer_font_family": "Liga SFMono Nerd Font",
+  "buffer_font_family": "SF Mono",
   "buffer_font_fallbacks": ["D2Coding"],
-  "ui_font_size": 15,
+  "agent_font_size": 15,
+  "ui_font_size": 14,
+  "ui_font_family": "Noto Sans",
   "buffer_font_size": 12,
   "buffer_font_features": {
     "calt": false
   },
-  "buffer_line_height": {
-    "custom": 1.6
-  },
+  "buffer_line_height": "comfortable",
   "cursor_blink": false,
   "format_on_save": "on",
   "relative_line_numbers": true,
   "vim_mode": true,
   "vim": {
-    "use_system_clipboard": "on_yank"
+    "use_system_clipboard": "on_yank",
+    "use_smartcase_find": true,
+    "highlight_on_yank_duration": 150
+  },
+  "vertical_scroll_margin": 10,
+  "command_aliases": {
+    "W": "w",
+    "Wq": "wq",
+    "Q": "q"
   },
   "diagnostics": {
     "inline": {
       "enabled": true
     }
   },
+  "git": {
+    "inline_blame": {
+      "enabled": false
+    }
+  },
   "inlay_hints": {
-    "enabled": true
+    "enabled": true,
+    "show_parameter_hints": false,
+    "show_background": true
   },
   "features": {
     "edit_prediction_provider": "copilot"
+  },
+  "lsp": {
+    "gopls": {
+      "initialization_options": {
+        "usePlaceholders": false
+      }
+    },
+    "clangd": {
+      "binary": {
+        "path": "/usr/bin/clangd",
+        "arguments": ["--function-arg-placeholders=0"]
+      }
+    },
+    "yaml-language-server": {
+      "settings": {
+        "yaml": {
+          "schemas": {
+            "kubernetes": [
+              "*deploy*.yaml",
+              "*service*.yaml",
+              "*secret*.yaml",
+              "*ingress*.yaml",
+              "*configmap*.yaml",
+              "*manifest*.yaml",
+              "*deploy*.yml",
+              "*service*.yml",
+              "*secret*.yml",
+              "*ingress*.yml",
+              "*configmap*.yml",
+              "*manifest*.yml"
+            ],
+            "http://json.schemastore.org/github-workflow": ".github/workflows/*",
+            "http://json.schemastore.org/github-action": ".github/action.{yml,yaml}",
+            "http://json.schemastore.org/ansible-stable-2.9": "roles/tasks/*.{yml,yaml}",
+            "http://json.schemastore.org/kustomization": "kustomization.{yml,yaml}",
+            "https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/ansible.json#/$defs/playbook": "*play*.{yml,yaml}",
+            "http://json.schemastore.org/chart": "Chart.{yml,yaml}",
+            "https://json.schemastore.org/dependabot-v2": ".github/dependabot.{yml,yaml}",
+            "https://json.schemastore.org/openapi.json": "*api*.{yml,yaml}",
+            "https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json": "*docker-compose*.{yml,yaml}",
+            "https://raw.githubusercontent.com/argoproj/argo-workflows/master/api/jsonschema/schema.json": "*flow*.{yml,yaml}"
+          }
+        }
+      }
+    }
+  },
+  "languages": {
+    "Python": {
+      "language_servers": ["pyright", "ruff", "isort"],
+      "format_on_save": "on",
+      "code_actions_on_format": { "source.organizeImports.ruff": true }
+    }
   }
 }
