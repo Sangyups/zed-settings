@@ -1,4 +1,8 @@
 {
+  "git_panel": {
+    "tree_view": false
+  },
+  "colorize_brackets": true,
   "debugger": {
     "dock": "left"
   },
@@ -9,6 +13,7 @@
     }
   },
   "agent": {
+    "always_allow_tool_actions": true,
     "play_sound_when_agent_done": true,
     "default_profile": "write",
     "default_model": {
@@ -33,14 +38,14 @@
     "dock": "right",
     "font_family": "Liga SFMono Nerd Font"
   },
-  "theme": "Github Dark Dimmed",
+  "theme": "JetBrains Dark",
   "experimental.theme_overrides": {
     "syntax": {
       "string": {
         "font_weight": 700
       },
-      "function": {
-        "color": "#ffffff"
+      "comment": {
+        "font_style": "italic"
       }
     },
     "deleted": "#c23636"
@@ -50,9 +55,10 @@
   },
   "buffer_font_family": "SF Mono",
   "buffer_font_fallbacks": ["D2Coding"],
-  "agent_font_size": 15,
+  "agent_ui_font_size": 15,
   "ui_font_size": 14,
   "ui_font_family": "Noto Sans",
+  "ui_font_fallbacks": ["D2Coding"],
   "buffer_font_size": 12,
   "buffer_font_features": {
     "calt": false
@@ -60,7 +66,7 @@
   "buffer_line_height": "comfortable",
   "cursor_blink": false,
   "format_on_save": "on",
-  "relative_line_numbers": true,
+  "relative_line_numbers": "enabled",
   "vim_mode": true,
   "vim": {
     "use_system_clipboard": "on_yank",
@@ -84,9 +90,12 @@
     }
   },
   "inlay_hints": {
-    "enabled": true,
+    "enabled": false,
     "show_parameter_hints": false,
-    "show_background": true
+    "show_background": true,
+    "toggle_on_modifiers_press": {
+      "platform": true
+    }
   },
   "features": {
     "edit_prediction_provider": "copilot"
@@ -138,8 +147,6 @@
   },
   "languages": {
     "Python": {
-      "language_servers": ["pyright", "ruff", "isort"],
-      "format_on_save": "on",
       "code_actions_on_format": { "source.organizeImports.ruff": true }
     }
   }

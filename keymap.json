@@ -46,6 +46,12 @@
     }
   },
   {
+    "context": "AgentPanel",
+    "bindings": {
+      "cmd-?": "workspace::ToggleRightDock"
+    }
+  },
+  {
     "context": "Editor",
     "bindings": {
       "alt-f12": "terminal_panel::ToggleFocus"

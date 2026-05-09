@@ -1,107 +1,128 @@
 {
+  "cli_default_open_behavior": "existing_window",
+  "icon_theme": "Zed (Default)",
+  "project_panel": {
+    "dock": "left",
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "edit_predictions": {
+    "provider": "copilot",
+  },
+  "git_panel": {
+    "dock": "left",
+    "tree_view": false,
+  },
+  "colorize_brackets": true,
   "debugger": {
-    "dock": "left"
+    "dock": "left",
   },
   "show_edit_predictions": false,
-  "agent_servers": {
-    "gemini": {
-      "ignore_system_version": false
-    }
-  },
   "agent": {
-    "play_sound_when_agent_done": true,
+    "dock": "right",
+    "play_sound_when_agent_done": "always",
     "default_profile": "write",
     "default_model": {
       "provider": "openai",
-      "model": "gpt-5"
+      "model": "gpt-5",
     },
     "commit_message_model": {
       "provider": "copilot_chat",
-      "model": "gpt-4.1"
+      "model": "gpt-4.1",
     },
     "inline_assistant_model": {
       "provider": "openai",
-      "model": "gpt-5"
+      "model": "gpt-5",
     },
     "inline_alternatives": [],
     "thread_summary_model": {
       "provider": "copilot_chat",
-      "model": "gpt-4.1"
-    }
+      "model": "gpt-4.1",
+    },
   },
   "terminal": {
     "dock": "right",
-    "font_family": "Liga SFMono Nerd Font"
+    "font_family": "Liga SFMono Nerd Font",
   },
-  "theme": "JetBrains Dark",
-  "experimental.theme_overrides": {
-    "syntax": {
-      "string": {
-        "font_weight": 700
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "New Darcula",
+  },
+  "theme_overrides": {
+    "New Darcula": {
+      "syntax": {
+        "constant": {
+          "color": "#C77DBB",
+          "font_weight": 600,
+        },
+        "string": {
+          "font_weight": 600,
+        },
       },
-      "comment": {
-        "font_style": "italic"
-      }
     },
-    "deleted": "#c23636"
   },
   "telemetry": {
-    "metrics": false
+    "metrics": false,
   },
   "buffer_font_family": "SF Mono",
   "buffer_font_fallbacks": ["D2Coding"],
   "agent_ui_font_size": 15,
   "ui_font_size": 14,
   "ui_font_family": "Noto Sans",
+  "ui_font_fallbacks": ["D2Coding"],
   "buffer_font_size": 12,
   "buffer_font_features": {
-    "calt": false
+    "calt": false,
   },
   "buffer_line_height": "comfortable",
   "cursor_blink": false,
   "format_on_save": "on",
-  "relative_line_numbers": true,
+  "relative_line_numbers": "enabled",
   "vim_mode": true,
   "vim": {
     "use_system_clipboard": "on_yank",
     "use_smartcase_find": true,
-    "highlight_on_yank_duration": 150
+    "highlight_on_yank_duration": 150,
   },
   "vertical_scroll_margin": 10,
   "command_aliases": {
-    "W": "w",
-    "Wq": "wq",
-    "Q": "q"
+    "W": "workspace::Save",
+    "Q": "pane::CloseActiveItem",
   },
   "diagnostics": {
     "inline": {
-      "enabled": true
-    }
+      "enabled": true,
+    },
   },
   "git": {
     "inline_blame": {
-      "enabled": false
-    }
+      "enabled": false,
+    },
   },
   "inlay_hints": {
-    "enabled": true,
+    "enabled": false,
     "show_parameter_hints": false,
-    "show_background": true
-  },
-  "features": {
-    "edit_prediction_provider": "copilot"
+    "show_background": true,
+    "toggle_on_modifiers_press": {
+      "platform": true,
+    },
   },
   "lsp": {
     "gopls": {
       "initialization_options": {
-        "usePlaceholders": false
-      }
+        "usePlaceholders": false,
+      },
     },
     "clangd": {
       "binary": {
         "path": "/usr/bin/clangd",
-        "arguments": ["--function-arg-placeholders=0"]
-      }
+        "arguments": ["--function-arg-placeholders=0"],
+      },
     },
     "yaml-language-server": {
       "settings": {
@@ -119,7 +140,7 @@
               "*secret*.yml",
               "*ingress*.yml",
               "*configmap*.yml",
-              "*manifest*.yml"
+              "*manifest*.yml",
             ],
             "http://json.schemastore.org/github-workflow": ".github/workflows/*",
             "http://json.schemastore.org/github-action": ".github/action.{yml,yaml}",
@@ -130,17 +151,18 @@
             "https://json.schemastore.org/dependabot-v2": ".github/dependabot.{yml,yaml}",
             "https://json.schemastore.org/openapi.json": "*api*.{yml,yaml}",
             "https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json": "*docker-compose*.{yml,yaml}",
-            "https://raw.githubusercontent.com/argoproj/argo-workflows/master/api/jsonschema/schema.json": "*flow*.{yml,yaml}"
-          }
-        }
-      }
-    }
+            "https://raw.githubusercontent.com/argoproj/argo-workflows/master/api/jsonschema/schema.json": "*flow*.{yml,yaml}",
+          },
+        },
+      },
+    },
   },
   "languages": {
     "Python": {
-      "language_servers": ["pyright", "ruff", "isort"],
-      "format_on_save": "on",
-      "code_actions_on_format": { "source.organizeImports.ruff": true }
-    }
-  }
+      "code_actions_on_format": { "source.organizeImports.ruff": true },
+    },
+    "Java": {
+      "format_on_save": "off",
+    },
+  },
 }
