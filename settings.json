@@ -124,6 +124,38 @@
         "arguments": ["--function-arg-placeholders=0"],
       },
     },
+    "jdtls": {
+      "settings": {
+        "java_home": "~/.local/share/mise/installs/java/temurin-21",
+      },
+      "initialization_options": {
+        "settings": {
+          "java": {
+            "configuration": {
+              "runtimes": [
+                {
+                  "name": "JavaSE-11",
+                  "path": "~/.local/share/mise/installs/java/temurin-11",
+                  "default": true,
+                },
+                {
+                  "name": "JavaSE-17",
+                  "path": "~/.local/share/mise/installs/java/temurin-17",
+                },
+                {
+                  "name": "JavaSE-21",
+                  "path": "~/.local/share/mise/installs/java/temurin-21",
+                },
+                {
+                  "name": "JavaSE-25",
+                  "path": "~/.local/share/mise/installs/java/temurin-25",
+                },
+              ],
+            },
+          },
+        },
+      },
+    },
     "yaml-language-server": {
       "settings": {
         "yaml": {
