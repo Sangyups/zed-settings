@@ -10,8 +10,8 @@
     "context": "Workspace",
     "bindings": {
       "cmd-1": "project_panel::ToggleFocus",
-      "alt-f12": "terminal_panel::ToggleFocus"
-    }
+      "alt-f12": "terminal_panel::ToggleFocus",
+    },
   },
   {
     "context": "EmptyPane || SharedScreen",
@@ -21,8 +21,8 @@
       "space f w": "pane::DeploySearch",
       "space e e": "project_panel::ToggleFocus",
       "cmd-1": "project_panel::ToggleFocus",
-      "alt-f12": "terminal_panel::ToggleFocus"
-    }
+      "alt-f12": "terminal_panel::ToggleFocus",
+    },
   },
   {
     "context": "ProjectPanel && !editing",
@@ -30,44 +30,44 @@
       "space e f": "workspace::ToggleLeftDock",
       "space e e": "workspace::ToggleLeftDock",
       "escape": "workspace::ToggleLeftDock",
-      "cmd-1": "workspace::ToggleLeftDock"
-    }
+      "cmd-1": "workspace::ToggleLeftDock",
+    },
   },
   {
     "context": "AssistantPanel",
     "bindings": {
-      "escape": "workspace::ToggleRightDock"
-    }
+      "escape": "workspace::ToggleRightDock",
+    },
   },
   {
     "context": "DebugPanel",
     "bindings": {
-      "escape": "workspace::ToggleLeftDock"
-    }
+      "escape": "workspace::ToggleLeftDock",
+    },
   },
   {
     "context": "AgentPanel",
     "bindings": {
-      "cmd-?": "workspace::ToggleRightDock"
-    }
+      "cmd-?": "workspace::ToggleRightDock",
+    },
   },
   {
     "context": "Editor",
     "bindings": {
-      "alt-f12": "terminal_panel::ToggleFocus"
-    }
+      "alt-f12": "terminal_panel::ToggleFocus",
+    },
   },
   {
     "context": "Terminal",
     "bindings": {
-      "alt-f12": "workspace::ToggleRightDock"
-    }
+      "alt-f12": "workspace::ToggleRightDock",
+    },
   },
   {
     "context": "vim_mode",
     "bindings": {
-      "ctrl-q": "editor::ShowSignatureHelp"
-    }
+      "ctrl-q": "editor::ShowSignatureHelp",
+    },
   },
   {
     "context": "VimControl && !menu",
@@ -82,8 +82,8 @@
       "space r n": "editor::Rename",
       "space c a": "editor::ToggleCodeActions",
       "space f m": "editor::Format",
-      "space a e": "assistant::InlineAssist"
-    }
+      "space a e": "assistant::InlineAssist",
+    },
   },
   {
     "context": "vim_mode == normal && !menu",
@@ -120,33 +120,33 @@
       "[ f": "vim::PreviousMethodStart",
       "[ shift-f": "vim::PreviousMethodEnd",
       "space b p": "editor::ToggleBreakpoint",
-      "space b d a": ["pane::CloseOtherItems", { "close_pinned": false }]
-    }
+      "space b d a": ["pane::CloseOtherItems", { "close_pinned": false }],
+    },
   },
   {
     "context": "vim_operator == d",
     "bindings": {
-      "s": "vim::PushDeleteSurrounds"
-    }
+      "s": "vim::PushDeleteSurrounds",
+    },
   },
   {
     "context": "vim_operator == c",
     "bindings": {
-      "s": ["vim::PushChangeSurrounds", {}]
-    }
+      "s": ["vim::PushChangeSurrounds", {}],
+    },
   },
   {
     "context": "vim_operator == y",
     "bindings": {
-      "s": ["vim::PushAddSurrounds", {}]
-    }
+      "s": ["vim::PushAddSurrounds", {}],
+    },
   },
   {
     "context": "Workspace && !Terminal",
     "bindings": {
       "ctrl-shift-r": "task::Spawn",
-      "ctrl-shift-d": "debugger::Start"
-    }
+      "ctrl-shift-d": "debugger::Start",
+    },
   },
   {
     "context": "vim_mode == visual && !menu",
@@ -154,14 +154,14 @@
       "g c": "editor::ToggleComments",
       "shift-s": "vim::PushAddSurrounds",
       ">": "editor::Indent",
-      "<": "editor::Outdent"
-    }
+      "<": "editor::Outdent",
+    },
   },
   {
     "context": "Editor && (edit_prediction || edit_prediction_conflict)",
     "bindings": {
       "ctrl-y": "editor::AcceptEditPrediction",
-      "tab": "editor::Tab"
-    }
-  }
+      "tab": "editor::Tab",
+    },
+  },
 ]
