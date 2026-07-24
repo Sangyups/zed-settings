@@ -18,7 +18,7 @@
     "bindings": {
       "space f f": "file_finder::Toggle",
       "space e f": "project_panel::ToggleFocus",
-      "space f w": "pane::DeploySearch",
+      "space f w": "text_finder::Toggle",
       "space e e": "project_panel::ToggleFocus",
       "cmd-1": "project_panel::ToggleFocus",
       "alt-f12": "terminal_panel::ToggleFocus",
@@ -96,7 +96,7 @@
       "space g h a": "git::StageAndNext",
       "space g h u": "git::UnstageAndNext",
       "space g h s": "git::ToggleStaged",
-      "space g b": "editor::OpenGitBlameCommit",
+      "space g b": "editor::BlameHover",
       "g c c": "editor::ToggleComments",
       "g r": "editor::FindAllReferences",
       "g d": "editor::GoToDefinition",
@@ -107,7 +107,7 @@
       "space e f": "pane::RevealInProjectPanel",
       "space e e": "project_panel::ToggleFocus",
       "space f f": "file_finder::Toggle",
-      "space f w": "pane::DeploySearch",
+      "space f w": "text_finder::Toggle",
       "[ d": "editor::GoToPreviousDiagnostic",
       "] d": "editor::GoToDiagnostic",
       "[ g": "editor::GoToPreviousHunk",
@@ -158,7 +158,7 @@
     },
   },
   {
-    "context": "Editor && (edit_prediction || edit_prediction_conflict)",
+    "context": "Editor && (edit_prediction || (edit_prediction && (showing_completions || in_leading_whitespace)))",
     "bindings": {
       "ctrl-y": "editor::AcceptEditPrediction",
       "tab": "editor::Tab",
