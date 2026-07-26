@@ -113,6 +113,7 @@
   "command_aliases": {
     "W": "workspace::Save",
     "Q": "pane::CloseActiveItem",
+    "Bda": "pane::CloseOtherItems",
   },
   "git": {
     "inline_blame": {
