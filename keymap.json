@@ -31,6 +31,10 @@
       "space e e": "workspace::ToggleLeftDock",
       "escape": "workspace::ToggleLeftDock",
       "cmd-1": "workspace::ToggleLeftDock",
+      "enter": [
+        "action::Sequence",
+        ["project_panel::OpenPermanent", "workspace::ToggleLeftDock"],
+      ],
     },
   },
   {
