@@ -16,6 +16,7 @@
   {
     "context": "EmptyPane || SharedScreen",
     "bindings": {
+      "space f p": "projects::OpenRecent",
       "space f f": "file_finder::Toggle",
       "space e f": "project_panel::ToggleFocus",
       "space f w": "text_finder::Toggle",
@@ -110,6 +111,7 @@
       "ctrl-l": "workspace::ActivatePaneRight",
       "space e f": "pane::RevealInProjectPanel",
       "space e e": "project_panel::ToggleFocus",
+      "space f p": "projects::OpenRecent",
       "space f f": "file_finder::Toggle",
       "space f w": "text_finder::Toggle",
       "[ d": "editor::GoToPreviousDiagnostic",
