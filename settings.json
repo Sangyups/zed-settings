@@ -154,12 +154,18 @@
       "initialization_options": {
         "settings": {
           "java": {
+            "import": {
+              "gradle": {
+                "java": {
+                  "home": "~/.local/share/mise/installs/java/temurin-21",
+                },
+              },
+            },
             "configuration": {
               "runtimes": [
                 {
                   "name": "JavaSE-11",
                   "path": "~/.local/share/mise/installs/java/temurin-11",
-                  "default": true,
                 },
                 {
                   "name": "JavaSE-17",
@@ -168,6 +174,7 @@
                 {
                   "name": "JavaSE-21",
                   "path": "~/.local/share/mise/installs/java/temurin-21",
+                  "default": true,
                 },
                 {
                   "name": "JavaSE-25",
