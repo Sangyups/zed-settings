@@ -57,8 +57,8 @@
   },
   "theme": {
     "mode": "light",
-    "light": "JetBrains Islands Light",
-    "dark": "New Darcula",
+    "light": "JetBrains Light",
+    "dark": "GitHub Dark Dimmed",
   },
   "theme_overrides": {
     "New Darcula": {
@@ -87,14 +87,13 @@
     },
   },
   "telemetry": {
+    "diagnostics": false,
     "metrics": false,
   },
   "buffer_font_family": "SF Mono",
   "buffer_font_fallbacks": ["D2Coding"],
-  "agent_ui_font_size": 15,
-  "ui_font_size": 14,
-  "ui_font_family": "Noto Sans",
-  "ui_font_fallbacks": ["D2Coding"],
+  "ui_font_size": 13.5,
+  "ui_font_family": "Apple Braille",
   "buffer_font_size": 12,
   "buffer_font_features": {
     "calt": false,
@@ -149,7 +148,7 @@
     },
     "jdtls": {
       "settings": {
-        "java_home": "~/.local/share/mise/installs/java/temurin-21",
+        "java_home": "~/.local/share/mise/installs/java/temurin-25",
       },
       "initialization_options": {
         "settings": {
