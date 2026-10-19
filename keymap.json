@@ -18,6 +18,8 @@
     "bindings": {
       "space f p": "projects::OpenRecent",
       "space f f": "file_finder::Toggle",
+      "space f c": "project_symbols::Toggle",
+      "space f s": "project_symbols::Toggle",
       "space e f": "project_panel::ToggleFocus",
       "space f w": "text_finder::Toggle",
       "space e e": "project_panel::ToggleFocus",
@@ -112,6 +114,8 @@
       "space e f": "pane::RevealInProjectPanel",
       "space e e": "project_panel::ToggleFocus",
       "space f p": "projects::OpenRecent",
+      "space f c": "project_symbols::Toggle",
+      "space f s": "project_symbols::Toggle",
       "space f f": "file_finder::Toggle",
       "space f w": "text_finder::Toggle",
       "[ d": "editor::GoToPreviousDiagnostic",
